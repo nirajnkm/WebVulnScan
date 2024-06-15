@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Web Vulnerability Scanner</title>
+    <style>
+    body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #BB86FC;
+}
+
+form {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    color: #FFFFFF;
+}
+
+input[type="text"] {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #BB86FC;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3700B3;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Web Vulnerability Scanner</h1>
+    <form action="/scan" method="post">
+        <label for="url">Enter URL to scan:</label>
+        <input type="text" id="url" name="url">
+        <button type="submit">Scan</button>
+    </form>
+</body>
+</html>
