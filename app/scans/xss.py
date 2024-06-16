@@ -2,7 +2,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 
 def check_xss(url):
-    with open('payloads/payload.txt', 'r') as file:
+    with open('payloads/xss_payload.txt', 'r') as file:
         payloads = [line.strip() for line in file.readlines()]
     
     vulnerable = []
