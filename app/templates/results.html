@@ -32,7 +32,7 @@
     </style>
 </head>
 <body>
-    <h1>Scan Results for {{ url }}</h1>
+    <h1>Scan Results for <a href="{{ url }}" target="_blank">{{ url }}</a></h1>
     <ul>
         {% for url in results %}
             <li><a href="{{ url }}" target="_blank">{{ url }}</a></li>
